@@ -40,8 +40,8 @@ def calculate_scheme(data_path):
     # расчет площадей (здесь параллельно создаются промежуточные картинки, которые сохраняются в папку images)
     squares_dict, report_dict = utils.get_all_squares(elements_dict, adj_rects, width, height)
 
-    # заполнение Huyni
-    importantHUeta = {
+    # заполнение картежа с выходными данными
+    importantDirect = {
         "elements_dict": elements_dict,
         "adj_rects": adj_rects,
         "border_rect": border_rect,
@@ -50,7 +50,7 @@ def calculate_scheme(data_path):
         "report_dict": report_dict,
         "squares_dict": squares_dict,
     }
-    return importantHUeta
+    return importantDirect
     # вывод ВСЕГО в консольку
     # utils.print_squares(squares_dict)
 

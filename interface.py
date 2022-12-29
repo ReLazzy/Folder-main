@@ -215,6 +215,7 @@ def create_checkbox_list(root, checkboxes_list, keys_dict):
 
 
 def create_frame(root, list_keys, importantDict):
+
     middle_frame = Frame(root, width=550)
     chart_image_frame = Frame(middle_frame)
     charts_menu_frame = Frame(middle_frame)
@@ -265,11 +266,10 @@ def create_frame(root, list_keys, importantDict):
                              elements_keys_dict)
     def on_closing():
         print("Выводится при попытке закрытия окна2")
-        root.destroy()
-        
+        root.destroy() 
 
     root.protocol("WM_DELETE_WINDOW", on_closing)
-    root.mainloop()
+    
     print("[f[f]] при попытке закрытия окна2")
 
 
